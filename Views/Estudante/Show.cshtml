@@ -1,0 +1,22 @@
+@model EstudoASPNETRazor.ViewModels.EstudanteViewModel
+
+@{
+    ViewData["Title"] = "Estudante";
+}
+
+<h1>Estudante: @Model.Nome</h1>
+
+@if(Model.Ativo == false)
+{
+    <button>Ativar</button>
+}
+else
+{
+    <button>Iniciar Conversa</button>
+    <button>Editar</button>
+    <button>Desativar</button>
+}
+<hr>
+
+<p><b>Id:</b> @Model.Id</p>
+<p><b>Endereço:</b> @Model.Endereco</p>
